@@ -4,7 +4,7 @@
  * @creatdate   2011-0501 koyshe <koyshe@gmail.com>
  */
 error_reporting(E_ALL ^ E_NOTICE);
-date_default_timezone_set('PRC');
+date_default_timezone_set('PRC'); 
 header('Content-Type: text/html; charset=utf-8');
 ini_set("session.cookie_httponly", 1);
 
@@ -12,7 +12,9 @@ ini_set("session.cookie_httponly", 1);
 if (@ini_get('register_globals')) {
 	foreach ($_REQUEST as $name => $value) unset($$name);
 }
-
+/*
+ssssssssss
+*/
 //#################=====引入基本类库=====#################//
 include(dirname(__FILE__).'/config.php');
 include(dirname(__FILE__).'/hook/ini.hook.php');
